@@ -2,27 +2,15 @@
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11542" systemVersion="16A323" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
     <entity name="Player" representedClassName="Player" syncable="YES" codeGenerationType="class">
         <attribute name="lastName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="playerAssists" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="playerBlocks" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="playerNumber" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="playerID" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PlayerStatistics" inverseName="playerID" inverseEntity="PlayerStatistics" syncable="YES"/>
-    </entity>
-    <entity name="PlayerStatistics" representedClassName="PlayerStatistics" syncable="YES" codeGenerationType="class">
-        <attribute name="playerAssist" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
-        <attribute name="playerBlock" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
-        <attribute name="playerDefReb" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
-        <attribute name="playerFoul" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
-        <attribute name="playerOffReb" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
-        <attribute name="playerOneMake" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
-        <attribute name="playerOneMiss" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
-        <attribute name="playerSteal" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
-        <attribute name="playerThreeMake" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
-        <attribute name="playerThreeMiss" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="playerPoints" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="playerRebounds" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="playerSteals" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="playerTurnover" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
-        <attribute name="playerTwoMake" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
-        <attribute name="playerTwoMiss" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
-        <relationship name="playerID" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Player" inverseName="playerID" inverseEntity="Player" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Player" positionX="-234" positionY="15" width="128" height="88"/>
-        <element name="PlayerStatistics" positionX="-36" positionY="-63" width="128" height="253"/>
+        <element name="Player" positionX="-234" positionY="15" width="128" height="163"/>
     </elements>
 </model>

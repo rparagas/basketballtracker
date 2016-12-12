@@ -15,10 +15,21 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     @IBOutlet weak var tableViewTeamTwoActive: UITableView!
     @IBOutlet weak var tableViewTeamTwoInactive: UITableView!
 
+    @IBOutlet weak var textLabelPoints: UILabel!
+    @IBOutlet weak var textLabelRebounds: UILabel!
+    @IBOutlet weak var textLabelAssists: UILabel!
+    @IBOutlet weak var textLabelSteals: UILabel!
+    @IBOutlet weak var textLabelBlocks: UILabel!
+    @IBOutlet weak var textLabelTurnovers: UILabel!
+    @IBOutlet weak var textLabelPlayerNumber: UILabel!
+    @IBOutlet weak var textLabelPlayerLastName: UILabel!
+    
+    
     var teamOneActive : [Player] = []
     var teamOneInactive : [Player] = []
     var teamTwoActive : [Player] = []
     var teamTwoInactive : [Player] = []
+    var selectedPlayer : Player?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -72,11 +83,24 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         cell.textLabel?.text = "#\(player!.playerNumber!) \(player!.lastName!)"
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if (tableView == self.tableViewTeamOneActive) {
+            selectedPlayer = teamOneActive[indexPath.row]
+            updatePlayerLabels()
+        }
+        if (tableView == self.tableViewTeamTwoActive) {
+            selectedPlayer = teamTwoActive[indexPath.row]
+            updatePlayerLabels()
+        }
+    }
 
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
     
     func createTeam() {
         let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
@@ -123,7 +147,41 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         teamTwoInactive = [player12]
     }
     
-
+    @IBAction func pointsTapped(_ sender: Any) {
+        selectedPlayer!.playerPoints = selectedPlayer!.playerPoints + 1
+        textLabelPoints.text = "\(selectedPlayer!.playerPoints)"
+    }
+    @IBAction func reboundsTapped(_ sender: Any) {
+        selectedPlayer!.playerRebounds = selectedPlayer!.playerRebounds + 1
+        textLabelRebounds.text = "\(selectedPlayer!.playerRebounds)"
+    }
+    @IBAction func assistsTapped(_ sender: Any) {
+        selectedPlayer!.playerAssists = selectedPlayer!.playerAssists + 1
+        textLabelAssists.text = "\(selectedPlayer!.playerAssists)"
+    }
+    @IBAction func stealsTapped(_ sender: Any) {
+        selectedPlayer!.playerSteals = selectedPlayer!.playerSteals + 1
+        textLabelSteals.text = "\(selectedPlayer!.playerSteals)"
+    }
+    @IBAction func blocksTapped(_ sender: Any) {
+        selectedPlayer!.playerBlocks = selectedPlayer!.playerBlocks + 1
+        textLabelBlocks.text = "\(selectedPlayer!.playerBlocks)"
+    }
+    @IBAction func turnoverTapped(_ sender: Any) {
+        selectedPlayer!.playerTurnover = selectedPlayer!.playerTurnover + 1
+        textLabelTurnovers.text = "\(selectedPlayer!.playerTurnover)"
+    }
+    
+    func updatePlayerLabels() {
+        textLabelPlayerNumber.text = "#\(selectedPlayer!.playerNumber!)"
+        textLabelPlayerLastName.text = selectedPlayer!.lastName
+        textLabelPoints.text = "\(selectedPlayer!.playerPoints)"
+        textLabelRebounds.text = "\(selectedPlayer!.playerRebounds)"
+        textLabelAssists.text = "\(selectedPlayer!.playerAssists)"
+        textLabelSteals.text = "\(selectedPlayer!.playerSteals)"
+        textLabelBlocks.text = "\(selectedPlayer!.playerBlocks)"
+        textLabelTurnovers.text = "\(selectedPlayer!.playerTurnover)"
+    }
 
 }
 
