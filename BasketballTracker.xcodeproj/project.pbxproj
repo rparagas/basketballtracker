@@ -1,0 +1,326 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A60C19011DFE43A700CF1F7F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60C19001DFE43A700CF1F7F /* AppDelegate.swift */; };
+		A60C19031DFE43A700CF1F7F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60C19021DFE43A700CF1F7F /* ViewController.swift */; };
+		A60C19061DFE43A700CF1F7F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A60C19041DFE43A700CF1F7F /* Main.storyboard */; };
+		A60C19091DFE43A700CF1F7F /* BasketballTracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A60C19071DFE43A700CF1F7F /* BasketballTracker.xcdatamodeld */; };
+		A60C190B1DFE43A700CF1F7F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A60C190A1DFE43A700CF1F7F /* Assets.xcassets */; };
+		A60C190E1DFE43A700CF1F7F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A60C190C1DFE43A700CF1F7F /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A60C18FD1DFE43A700CF1F7F /* BasketballTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BasketballTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A60C19001DFE43A700CF1F7F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A60C19021DFE43A700CF1F7F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A60C19051DFE43A700CF1F7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A60C19081DFE43A700CF1F7F /* BasketballTracker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BasketballTracker.xcdatamodel; sourceTree = "<group>"; };
+		A60C190A1DFE43A700CF1F7F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A60C190D1DFE43A700CF1F7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A60C190F1DFE43A700CF1F7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A60C18FA1DFE43A700CF1F7F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A60C18F41DFE43A700CF1F7F = {
+			isa = PBXGroup;
+			children = (
+				A60C18FF1DFE43A700CF1F7F /* BasketballTracker */,
+				A60C18FE1DFE43A700CF1F7F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A60C18FE1DFE43A700CF1F7F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A60C18FD1DFE43A700CF1F7F /* BasketballTracker.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A60C18FF1DFE43A700CF1F7F /* BasketballTracker */ = {
+			isa = PBXGroup;
+			children = (
+				A60C19001DFE43A700CF1F7F /* AppDelegate.swift */,
+				A60C19021DFE43A700CF1F7F /* ViewController.swift */,
+				A60C19041DFE43A700CF1F7F /* Main.storyboard */,
+				A60C190A1DFE43A700CF1F7F /* Assets.xcassets */,
+				A60C190C1DFE43A700CF1F7F /* LaunchScreen.storyboard */,
+				A60C190F1DFE43A700CF1F7F /* Info.plist */,
+				A60C19071DFE43A700CF1F7F /* BasketballTracker.xcdatamodeld */,
+			);
+			path = BasketballTracker;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A60C18FC1DFE43A700CF1F7F /* BasketballTracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A60C19121DFE43A700CF1F7F /* Build configuration list for PBXNativeTarget "BasketballTracker" */;
+			buildPhases = (
+				A60C18F91DFE43A700CF1F7F /* Sources */,
+				A60C18FA1DFE43A700CF1F7F /* Frameworks */,
+				A60C18FB1DFE43A700CF1F7F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BasketballTracker;
+			productName = BasketballTracker;
+			productReference = A60C18FD1DFE43A700CF1F7F /* BasketballTracker.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A60C18F51DFE43A700CF1F7F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "Ray Paragas";
+				TargetAttributes = {
+					A60C18FC1DFE43A700CF1F7F = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = HKAVBPG58A;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = A60C18F81DFE43A700CF1F7F /* Build configuration list for PBXProject "BasketballTracker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A60C18F41DFE43A700CF1F7F;
+			productRefGroup = A60C18FE1DFE43A700CF1F7F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A60C18FC1DFE43A700CF1F7F /* BasketballTracker */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A60C18FB1DFE43A700CF1F7F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A60C190E1DFE43A700CF1F7F /* LaunchScreen.storyboard in Resources */,
+				A60C190B1DFE43A700CF1F7F /* Assets.xcassets in Resources */,
+				A60C19061DFE43A700CF1F7F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A60C18F91DFE43A700CF1F7F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A60C19031DFE43A700CF1F7F /* ViewController.swift in Sources */,
+				A60C19011DFE43A700CF1F7F /* AppDelegate.swift in Sources */,
+				A60C19091DFE43A700CF1F7F /* BasketballTracker.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A60C19041DFE43A700CF1F7F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A60C19051DFE43A700CF1F7F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A60C190C1DFE43A700CF1F7F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A60C190D1DFE43A700CF1F7F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A60C19101DFE43A700CF1F7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		A60C19111DFE43A700CF1F7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A60C19131DFE43A700CF1F7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = HKAVBPG58A;
+				INFOPLIST_FILE = BasketballTracker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ray.BasketballTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		A60C19141DFE43A700CF1F7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = HKAVBPG58A;
+				INFOPLIST_FILE = BasketballTracker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ray.BasketballTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A60C18F81DFE43A700CF1F7F /* Build configuration list for PBXProject "BasketballTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A60C19101DFE43A700CF1F7F /* Debug */,
+				A60C19111DFE43A700CF1F7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A60C19121DFE43A700CF1F7F /* Build configuration list for PBXNativeTarget "BasketballTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A60C19131DFE43A700CF1F7F /* Debug */,
+				A60C19141DFE43A700CF1F7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A60C19071DFE43A700CF1F7F /* BasketballTracker.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A60C19081DFE43A700CF1F7F /* BasketballTracker.xcdatamodel */,
+			);
+			currentVersion = A60C19081DFE43A700CF1F7F /* BasketballTracker.xcdatamodel */;
+			path = BasketballTracker.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = A60C18F51DFE43A700CF1F7F /* Project object */;
+}
