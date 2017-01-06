@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class GameViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     @IBOutlet weak var tableViewTeamOneActive: UITableView!
     @IBOutlet weak var tableViewTeamOneInactive: UITableView!
@@ -24,17 +24,18 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     @IBOutlet weak var textLabelPlayerNumber: UILabel!
     @IBOutlet weak var textLabelPlayerLastName: UILabel!
     
-    
+    /*
     var teamOneActive : [Player] = []
     var teamOneInactive : [Player] = []
     var teamTwoActive : [Player] = []
     var teamTwoInactive : [Player] = []
     var selectedPlayer : Player?
+    */
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        createTeam()
+        //createTeam()
         tableViewTeamOneActive.dataSource = self
         tableViewTeamOneActive.delegate = self
         tableViewTeamOneInactive.dataSource = self
@@ -48,7 +49,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
+        /*
         if (tableView == self.tableViewTeamOneActive) {
             return teamOneActive.count
         }
@@ -60,13 +61,13 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         }
         if (tableView == self.tableViewTeamTwoInactive) {
             return teamTwoInactive.count
-        }
+        }*/
         return 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell : UITableViewCell = UITableViewCell()
-        var player : Player?
+        /*var player : Player?
         
         if (tableView == self.tableViewTeamOneActive) {
              player = teamOneActive[indexPath.row]
@@ -81,18 +82,18 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             player = teamTwoInactive[indexPath.row]
         }
         cell.textLabel?.text = "#\(player!.playerNumber!) \(player!.lastName!)"
-        return cell
+        */return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if (tableView == self.tableViewTeamOneActive) {
+        /*if (tableView == self.tableViewTeamOneActive) {
             selectedPlayer = teamOneActive[indexPath.row]
             updatePlayerLabels()
         }
         if (tableView == self.tableViewTeamTwoActive) {
             selectedPlayer = teamTwoActive[indexPath.row]
             updatePlayerLabels()
-        }
+        }*/
     }
 
     
@@ -101,86 +102,51 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         // Dispose of any resources that can be recreated.
     }
     
-    
+    /*
     func createTeam() {
         let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
         
-        let player1 = Player(context: context)
-        player1.playerNumber = "1"
-        player1.lastName = "Smith"
-        let player2 = Player(context: context)
-        player2.playerNumber = "2"
-        player2.lastName = "Smith"
-        let player3 = Player(context: context)
-        player3.playerNumber = "3"
-        player3.lastName = "Smith"
-        let player4 = Player(context: context)
-        player4.playerNumber = "4"
-        player4.lastName = "Smith"
-        let player5 = Player(context: context)
-        player5.playerNumber = "5"
-        player5.lastName = "Smith"
-        let player6 = Player(context: context)
-        player6.playerNumber = "6"
-        player6.lastName = "Smith"
-        let player7 = Player(context: context)
-        player7.playerNumber = "1"
-        player7.lastName = "Smith"
-        let player8 = Player(context: context)
-        player8.playerNumber = "2"
-        player8.lastName = "Smith"
-        let player9 = Player(context: context)
-        player9.playerNumber = "3"
-        player9.lastName = "Smith"
-        let player10 = Player(context: context)
-        player10.playerNumber = "4"
-        player10.lastName = "Smith"
-        let player11 = Player(context: context)
-        player11.playerNumber = "5"
-        player11.lastName = "Smith"
-        let player12 = Player(context: context)
-        player12.playerNumber = "6"
-        player12.lastName = "Smith"
         teamOneActive = [player1,player2,player3,player4,player5]
         teamOneInactive = [player6]
         teamTwoActive = [player7,player8,player9,player10,player11]
         teamTwoInactive = [player12]
     }
+    */
     
     @IBAction func pointsTapped(_ sender: Any) {
-        selectedPlayer!.playerPoints = selectedPlayer!.playerPoints + 1
-        textLabelPoints.text = "\(selectedPlayer!.playerPoints)"
+        //selectedPlayer!.playerPoints = selectedPlayer!.playerPoints + 1
+        //textLabelPoints.text = "\(selectedPlayer!.playerPoints)"
     }
     @IBAction func reboundsTapped(_ sender: Any) {
-        selectedPlayer!.playerRebounds = selectedPlayer!.playerRebounds + 1
-        textLabelRebounds.text = "\(selectedPlayer!.playerRebounds)"
+        //selectedPlayer!.playerRebounds = selectedPlayer!.playerRebounds + 1
+        //textLabelRebounds.text = "\(selectedPlayer!.playerRebounds)"
     }
     @IBAction func assistsTapped(_ sender: Any) {
-        selectedPlayer!.playerAssists = selectedPlayer!.playerAssists + 1
-        textLabelAssists.text = "\(selectedPlayer!.playerAssists)"
+        //selectedPlayer!.playerAssists = selectedPlayer!.playerAssists + 1
+        //textLabelAssists.text = "\(selectedPlayer!.playerAssists)"
     }
     @IBAction func stealsTapped(_ sender: Any) {
-        selectedPlayer!.playerSteals = selectedPlayer!.playerSteals + 1
-        textLabelSteals.text = "\(selectedPlayer!.playerSteals)"
+        //selectedPlayer!.playerSteals = selectedPlayer!.playerSteals + 1
+        //textLabelSteals.text = "\(selectedPlayer!.playerSteals)"
     }
     @IBAction func blocksTapped(_ sender: Any) {
-        selectedPlayer!.playerBlocks = selectedPlayer!.playerBlocks + 1
-        textLabelBlocks.text = "\(selectedPlayer!.playerBlocks)"
+        //selectedPlayer!.playerBlocks = selectedPlayer!.playerBlocks + 1
+        //textLabelBlocks.text = "\(selectedPlayer!.playerBlocks)"
     }
     @IBAction func turnoverTapped(_ sender: Any) {
-        selectedPlayer!.playerTurnover = selectedPlayer!.playerTurnover + 1
-        textLabelTurnovers.text = "\(selectedPlayer!.playerTurnover)"
+        //selectedPlayer!.playerTurnover = selectedPlayer!.playerTurnover + 1
+        //textLabelTurnovers.text = "\(selectedPlayer!.playerTurnover)"
     }
     
     func updatePlayerLabels() {
-        textLabelPlayerNumber.text = "#\(selectedPlayer!.playerNumber!)"
-        textLabelPlayerLastName.text = selectedPlayer!.lastName
-        textLabelPoints.text = "\(selectedPlayer!.playerPoints)"
-        textLabelRebounds.text = "\(selectedPlayer!.playerRebounds)"
-        textLabelAssists.text = "\(selectedPlayer!.playerAssists)"
-        textLabelSteals.text = "\(selectedPlayer!.playerSteals)"
-        textLabelBlocks.text = "\(selectedPlayer!.playerBlocks)"
-        textLabelTurnovers.text = "\(selectedPlayer!.playerTurnover)"
+        //textLabelPlayerNumber.text = "#\(selectedPlayer!.playerNumber!)"
+        //textLabelPlayerLastName.text = selectedPlayer!.lastName
+        //textLabelPoints.text = "\(selectedPlayer!.playerPoints)"
+        //textLabelRebounds.text = "\(selectedPlayer!.playerRebounds)"
+        //textLabelAssists.text = "\(selectedPlayer!.playerAssists)"
+        //textLabelSteals.text = "\(selectedPlayer!.playerSteals)"
+        //textLabelBlocks.text = "\(selectedPlayer!.playerBlocks)"
+        //textLabelTurnovers.text = "\(selectedPlayer!.playerTurnover)"
     }
 
 }

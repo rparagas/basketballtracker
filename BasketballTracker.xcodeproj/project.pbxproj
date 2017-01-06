@@ -8,22 +8,42 @@
 
 /* Begin PBXBuildFile section */
 		A60C19011DFE43A700CF1F7F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60C19001DFE43A700CF1F7F /* AppDelegate.swift */; };
-		A60C19031DFE43A700CF1F7F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60C19021DFE43A700CF1F7F /* ViewController.swift */; };
+		A60C19031DFE43A700CF1F7F /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60C19021DFE43A700CF1F7F /* GameViewController.swift */; };
 		A60C19061DFE43A700CF1F7F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A60C19041DFE43A700CF1F7F /* Main.storyboard */; };
 		A60C19091DFE43A700CF1F7F /* BasketballTracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A60C19071DFE43A700CF1F7F /* BasketballTracker.xcdatamodeld */; };
 		A60C190B1DFE43A700CF1F7F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A60C190A1DFE43A700CF1F7F /* Assets.xcassets */; };
 		A60C190E1DFE43A700CF1F7F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A60C190C1DFE43A700CF1F7F /* LaunchScreen.storyboard */; };
+		A60C191F1DFEDCF700CF1F7F /* Game+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60C19151DFEDCF700CF1F7F /* Game+CoreDataClass.swift */; };
+		A60C19201DFEDCF700CF1F7F /* Game+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60C19161DFEDCF700CF1F7F /* Game+CoreDataProperties.swift */; };
+		A60C19211DFEDCF700CF1F7F /* Team+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60C19171DFEDCF700CF1F7F /* Team+CoreDataClass.swift */; };
+		A60C19221DFEDCF700CF1F7F /* Team+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60C19181DFEDCF700CF1F7F /* Team+CoreDataProperties.swift */; };
+		A60C19231DFEDCF700CF1F7F /* TeamGame+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60C19191DFEDCF700CF1F7F /* TeamGame+CoreDataClass.swift */; };
+		A60C19241DFEDCF700CF1F7F /* TeamGame+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60C191A1DFEDCF700CF1F7F /* TeamGame+CoreDataProperties.swift */; };
+		A60C19251DFEDCF700CF1F7F /* Player+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60C191B1DFEDCF700CF1F7F /* Player+CoreDataClass.swift */; };
+		A60C19261DFEDCF700CF1F7F /* Player+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60C191C1DFEDCF700CF1F7F /* Player+CoreDataProperties.swift */; };
+		A60C19271DFEDCF700CF1F7F /* PlayerGame+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60C191D1DFEDCF700CF1F7F /* PlayerGame+CoreDataClass.swift */; };
+		A60C19281DFEDCF700CF1F7F /* PlayerGame+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60C191E1DFEDCF700CF1F7F /* PlayerGame+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A60C18FD1DFE43A700CF1F7F /* BasketballTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BasketballTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A60C19001DFE43A700CF1F7F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A60C19021DFE43A700CF1F7F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A60C19021DFE43A700CF1F7F /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		A60C19051DFE43A700CF1F7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A60C19081DFE43A700CF1F7F /* BasketballTracker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BasketballTracker.xcdatamodel; sourceTree = "<group>"; };
 		A60C190A1DFE43A700CF1F7F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A60C190D1DFE43A700CF1F7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A60C190F1DFE43A700CF1F7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A60C19151DFEDCF700CF1F7F /* Game+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Game+CoreDataClass.swift"; sourceTree = "<group>"; };
+		A60C19161DFEDCF700CF1F7F /* Game+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Game+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		A60C19171DFEDCF700CF1F7F /* Team+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Team+CoreDataClass.swift"; sourceTree = "<group>"; };
+		A60C19181DFEDCF700CF1F7F /* Team+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Team+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		A60C19191DFEDCF700CF1F7F /* TeamGame+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TeamGame+CoreDataClass.swift"; sourceTree = "<group>"; };
+		A60C191A1DFEDCF700CF1F7F /* TeamGame+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TeamGame+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		A60C191B1DFEDCF700CF1F7F /* Player+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Player+CoreDataClass.swift"; sourceTree = "<group>"; };
+		A60C191C1DFEDCF700CF1F7F /* Player+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Player+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		A60C191D1DFEDCF700CF1F7F /* PlayerGame+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PlayerGame+CoreDataClass.swift"; sourceTree = "<group>"; };
+		A60C191E1DFEDCF700CF1F7F /* PlayerGame+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PlayerGame+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +76,9 @@
 		A60C18FF1DFE43A700CF1F7F /* BasketballTracker */ = {
 			isa = PBXGroup;
 			children = (
+				A60C19291DFEDD3200CF1F7F /* Model */,
 				A60C19001DFE43A700CF1F7F /* AppDelegate.swift */,
-				A60C19021DFE43A700CF1F7F /* ViewController.swift */,
+				A60C19021DFE43A700CF1F7F /* GameViewController.swift */,
 				A60C19041DFE43A700CF1F7F /* Main.storyboard */,
 				A60C190A1DFE43A700CF1F7F /* Assets.xcassets */,
 				A60C190C1DFE43A700CF1F7F /* LaunchScreen.storyboard */,
@@ -65,6 +86,31 @@
 				A60C19071DFE43A700CF1F7F /* BasketballTracker.xcdatamodeld */,
 			);
 			path = BasketballTracker;
+			sourceTree = "<group>";
+		};
+		A60C19291DFEDD3200CF1F7F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A60C19151DFEDCF700CF1F7F /* Game+CoreDataClass.swift */,
+				A60C19171DFEDCF700CF1F7F /* Team+CoreDataClass.swift */,
+				A60C19191DFEDCF700CF1F7F /* TeamGame+CoreDataClass.swift */,
+				A60C191B1DFEDCF700CF1F7F /* Player+CoreDataClass.swift */,
+				A60C191D1DFEDCF700CF1F7F /* PlayerGame+CoreDataClass.swift */,
+				A60C192A1DFEDD3E00CF1F7F /* Generated */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		A60C192A1DFEDD3E00CF1F7F /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				A60C19161DFEDCF700CF1F7F /* Game+CoreDataProperties.swift */,
+				A60C19181DFEDCF700CF1F7F /* Team+CoreDataProperties.swift */,
+				A60C191A1DFEDCF700CF1F7F /* TeamGame+CoreDataProperties.swift */,
+				A60C191C1DFEDCF700CF1F7F /* Player+CoreDataProperties.swift */,
+				A60C191E1DFEDCF700CF1F7F /* PlayerGame+CoreDataProperties.swift */,
+			);
+			name = Generated;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,9 +186,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A60C19031DFE43A700CF1F7F /* ViewController.swift in Sources */,
+				A60C19211DFEDCF700CF1F7F /* Team+CoreDataClass.swift in Sources */,
+				A60C19031DFE43A700CF1F7F /* GameViewController.swift in Sources */,
+				A60C191F1DFEDCF700CF1F7F /* Game+CoreDataClass.swift in Sources */,
+				A60C19241DFEDCF700CF1F7F /* TeamGame+CoreDataProperties.swift in Sources */,
+				A60C19221DFEDCF700CF1F7F /* Team+CoreDataProperties.swift in Sources */,
+				A60C19281DFEDCF700CF1F7F /* PlayerGame+CoreDataProperties.swift in Sources */,
+				A60C19261DFEDCF700CF1F7F /* Player+CoreDataProperties.swift in Sources */,
+				A60C19231DFEDCF700CF1F7F /* TeamGame+CoreDataClass.swift in Sources */,
+				A60C19251DFEDCF700CF1F7F /* Player+CoreDataClass.swift in Sources */,
+				A60C19271DFEDCF700CF1F7F /* PlayerGame+CoreDataClass.swift in Sources */,
 				A60C19011DFE43A700CF1F7F /* AppDelegate.swift in Sources */,
 				A60C19091DFE43A700CF1F7F /* BasketballTracker.xcdatamodeld in Sources */,
+				A60C19201DFEDCF700CF1F7F /* Game+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
